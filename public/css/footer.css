@@ -1,0 +1,28 @@
+footer#footer {
+  background-color: #191e83;
+  height: 50px;
+  padding-top: 3px;
+}
+footer#footer ul {
+  margin-top: 10px;
+}
+footer#footer ul li {
+  list-style: none;
+  font-size: 15px;
+  display: inline-block;
+}
+footer#footer ul li span {
+  height: 100%;
+  widows: 100%;
+  padding: 10px;
+}
+footer#footer ul li span a {
+  height: 100%;
+  width: 100%;
+  color: #02cf02;
+  font-weight: bold;
+}
+footer#footer ul li:hover a:hover {
+  text-decoration: none;
+  color: #c1f0cd;
+}

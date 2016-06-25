@@ -1,0 +1,28 @@
+section#hero {
+  position: relative;
+  height: 66vw;
+  max-height: 550px;
+  overflow: hidden;
+}
+section#hero span {
+  position: absolute;
+  right: 10vw;
+  top: 5vw;
+  font-size: 30px;
+  color: #9a3b18;
+}
+section#hero img {
+  width: 100%;
+}
+section#content {
+  background-color: blue;
+  padding: 25px;
+}
+section#content div div div#main_content {
+  height: 90vw;
+  background: darkred;
+}
+section#content div div div#sidebar {
+  height: 71vw;
+  background: darkkhaki;
+}

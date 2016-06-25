@@ -1,0 +1,60 @@
+section#navbar {
+  background-color: blue;
+  color: #000;
+  height: 77px;
+  padding-top: 5px;
+  z-index: 10;
+}
+section#navbar li {
+  list-style: none;
+  position: relative;
+  left: 0px;
+}
+section#navbar span#logo {
+  color: #24D8ED;
+  font-size: 47px;
+  padding-left: 24px;
+}
+section#navbar ul {
+  display: inline-block;
+  position: absolute;
+  top: 9px;
+  left: 145px;
+  z-index: 10;
+  padding: 0;
+  width: auto;
+}
+section#navbar ul li.nav_header {
+  list-style: none;
+  display: inline-block;
+}
+section#navbar ul li.nav_header a {
+  width: 100%;
+  padding: 3px 13px;
+  font-size: 20px;
+}
+section#navbar ul li.nav_header:hover a {
+  text-decoration: none;
+}
+section#navbar ul li.nav_header:hover>ul {
+  display: block;
+  position: absolute;
+  top: 29px;
+  left: 0px;
+}
+section#navbar ul li.nav_header:hover>ul li:hover ul {
+  position: absolute;
+  display: block;
+  top: -1px;
+  left: 99%;
+  width: auto;
+}
+section#navbar ul li.nav_header ul {
+  display: none;
+}
+section#navbar ul li.nav_header ul li.drop ul {
+  display: none;
+}
+section#navbar div#search_bar {
+  background: green;
+}
