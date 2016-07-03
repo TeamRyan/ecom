@@ -19,4 +19,14 @@ Route::get('/', function()
 	return View::make('home');
 });
 
+Route::resource('/users', 'UsersController');
+
+Route::resource('sales', 'SalesController');
+
+Route::resource('products', 'ProductsController');
+
+Route::resource('carts', 'CartsController');
+
+Route::resource('photos', 'PhotosController');
+
 
