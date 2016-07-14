@@ -6,7 +6,12 @@
 
 @section('content')
 
-/vagrant/sites/ecom.dev/app/views/photos/index.blade.php
+@foreach($photos as $photo)
+        <h2>
+            <a href="{{{ action('PhotosController@show', $photo->id) }}}">{{{ $photo->file_name }}}<a>
+        </h2>
+        
+@endforeach
 
 @stop
 

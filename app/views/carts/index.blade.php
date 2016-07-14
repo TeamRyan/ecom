@@ -6,7 +6,12 @@
 
 @section('content')
 
-/vagrant/sites/ecom.dev/app/views/carts/index.blade.php
+@foreach($carts as $cart)
+        <h2>
+            <a href="{{{ action('CartsController@show', $cart->id) }}}">{{{ $cart->name }}}<a>
+        </h2>
+        
+@endforeach
 
 @stop
 

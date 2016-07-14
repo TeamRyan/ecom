@@ -6,7 +6,14 @@
 
 @section('content')
 
-/vagrant/sites/ecom.dev/app/views/photos/show.blade.php
+  
+    {{{ $photo->file_name }}}
+        
+
+    {{ Form::open(array('action' => array('PhotosController@destroy', $photo->id), 'method' => 'DELETE', 'id' => 'formDelete'))}}
+
+    <button type="submit" class="btn btn-default">Delete</button>
+    {{ Form::close() }}
 
 @stop
 

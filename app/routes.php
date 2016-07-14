@@ -19,7 +19,7 @@ Route::get('/', function()
 	return View::make('home');
 });
 
-Route::resource('/users', 'UsersController');
+Route::resource('users', 'UsersController');
 
 Route::resource('sales', 'SalesController');
 

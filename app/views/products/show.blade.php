@@ -6,7 +6,16 @@
 
 @section('content')
 
-/vagrant/sites/ecom.dev/app/views/products/show.blade.php
+ 
+        {{{ $product->name }}}
+      
+       
+        <br> Posted on {{ $product->created_at->setTimezone('America/Chicago')->format('l, F jS Y') }}
+
+    {{ Form::open(array('action' => array('ProductsController@destroy', $product->id), 'method' => 'DELETE', 'id' => 'formDelete'))}}
+
+    <button type="submit" class="btn btn-default">Delete</button>
+    {{ Form::close() }}
 
 @stop
 
